@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import Textbox from "../components/Textbox";
 import Button from "../components/Button";
 import { useSelector } from "react-redux";
+import { useLoginMutation } from "../redux/slices/api/authApiSlice";
+import { toast } from "sonner";
+import Loading from "../components/Loader";
 
 const Login = () => {
   const { user } = useSelector((state) => state.auth);
@@ -13,9 +16,17 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
+
+  const [login, { isLoading }] = useLoginMutation();
   // submit button handler
   const submitHandler = async (data) => {
-    console.log("submit");
+    try {
+      const result = await login(data).unwrap();
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+      toast.error(error?.data?.message || error.message);
+    }
   };
   // navigate to dashboard user true
   useEffect(() => {
@@ -84,11 +95,15 @@ const Login = () => {
               <span className="text-sm text-gray-500 hover:text-primary hover:underline cursor-pointer">
                 Forget Password?
               </span>
-              <Button
-                type="submit"
-                label="Submit"
-                className="w-full h-10 bg-primary text-white"
-              />
+              {isLoading ? (
+                <Loading />
+              ) : (
+                <Button
+                  type="submit"
+                  label="Submit"
+                  className="w-full h-10 bg-primary text-white"
+                />
+              )}
             </div>
           </form>
         </div>

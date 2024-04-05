@@ -14,7 +14,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Ahsan Habib Rifat",
+          name: "Ahsan Habib",
           title: "Administrator",
           role: "Admin",
           email: "admin@gmail.com",
@@ -121,7 +121,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Ahsan Habib Rifat",
+          name: "Ahsan Habib",
           title: "Administrator",
           role: "Admin",
           email: "admin@gmail.com",
@@ -261,7 +261,7 @@ export const summary = {
         },
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Ahsan Habib Rifat",
+          name: "Ahsan Habib",
           title: "Administrator",
           role: "Admin",
           email: "admin@gmail.com",
@@ -306,7 +306,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Ahsan Habib Rifat",
+          name: "Ahsan Habib",
           title: "Administrator",
           role: "Admin",
           email: "admin@gmail.com",
@@ -393,7 +393,7 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Ahsan Habib Rifat",
+          name: "Ahsan Habib",
           title: "Administrator",
           role: "Admin",
           email: "admin@gmail.com",
@@ -480,17 +480,17 @@ export const summary = {
       team: [
         {
           _id: "65c202d4aa62f32ffd1303cc",
-          name: "Ahsan Habib Rifat",
+          name: "Ahsan Habib",
           title: "Administrator",
           role: "Admin",
           email: "admin@gmail.com",
         },
         {
           _id: "65c27a0e18c0a1b750ad5cad",
-          name: "John Doe",
+          name: "Mahmudul Hasan",
           title: "Software Engineer",
           role: "Developer",
-          email: "john.doe@example.com",
+          email: "mahmudul.doe@example.com",
         },
         {
           _id: "65c30b96e639681a13def0b5",
@@ -556,7 +556,7 @@ export const summary = {
     },
     {
       _id: "65c202d4aa62f32ffd1303cc",
-      name: "Ahsan Habib Rifat",
+      name: "Ahsan Habib",
       title: "Administrator",
       role: "Admin",
       createdAt: "2024-02-06T09:58:44.794Z",
@@ -603,7 +603,7 @@ export const tasks = [
     team: [
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Ahsan Habib Rifat",
+        name: "Ahsan Habib",
         title: "Administrator",
         email: "admin@gmail.com",
       },
@@ -705,7 +705,7 @@ export const tasks = [
     team: [
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Ahsan Habib Rifat",
+        name: "Ahsan Habib",
         title: "Administrator",
         email: "admin@gmail.com",
       },
@@ -853,7 +853,7 @@ export const tasks = [
       },
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Ahsan Habib Rifat",
+        name: "Ahsan Habib",
         title: "Administrator",
         email: "admin@gmail.com",
       },
@@ -896,7 +896,7 @@ export const tasks = [
     team: [
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Ahsan Habib Rifat",
+        name: "Ahsan Habib",
         title: "Administrator",
         email: "admin@gmail.com",
       },
@@ -978,7 +978,7 @@ export const tasks = [
     team: [
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Ahsan Habib Rifat",
+        name: "Ahsan Habib",
         title: "Administrator",
         email: "admin@gmail.com",
       },
@@ -1060,7 +1060,7 @@ export const tasks = [
     team: [
       {
         _id: "65c202d4aa62f32ffd1303cc",
-        name: "Ahsan Habib Rifat",
+        name: "Ahsan Habib",
         title: "Administrator",
         email: "admin@gmail.com",
       },
@@ -1132,7 +1132,7 @@ export const activitiesData = [
   {
     _id: "2",
     type: "assigned",
-    activity: "task to Ahsan Habib Rifat",
+    activity: "task to Ahsan Habib",
     date: new Date("2023-01-15").toISOString(),
     by: "Akwasi Asante",
   },
@@ -1148,14 +1148,14 @@ export const activitiesData = [
   {
     _id: "5",
     type: "bug",
-    activity: "bug to Ahsan Habib Rifat",
+    activity: "bug to Ahsan Habib",
     date: new Date("2023-01-15").toISOString(),
     by: "Akwasi Asante",
   },
   {
     _id: "4",
     type: "completed",
-    activity: "Ahsan Habib Rifat has completed the task assigned",
+    activity: "Ahsan Habib has completed the task assigned",
     date: new Date("2023-01-15").toISOString(),
     by: "Akwasi Asante",
   },

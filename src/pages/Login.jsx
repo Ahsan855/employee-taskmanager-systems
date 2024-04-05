@@ -3,10 +3,11 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import Textbox from "../components/Textbox";
 import Button from "../components/Button";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useLoginMutation } from "../redux/slices/api/authApiSlice";
 import { toast } from "sonner";
 import Loading from "../components/Loader";
+import { setCredentials } from "../redux/slices/authSlice";
 
 const Login = () => {
   const { user } = useSelector((state) => state.auth);
@@ -16,13 +17,15 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [login, { isLoading }] = useLoginMutation();
   // submit button handler
   const submitHandler = async (data) => {
     try {
       const result = await login(data).unwrap();
-      console.log(result);
+      dispatch(setCredentials(result));
+      navigate("/");
     } catch (error) {
       console.log(error);
       toast.error(error?.data?.message || error.message);
